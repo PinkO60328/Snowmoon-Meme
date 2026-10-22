@@ -1,6 +1,6 @@
 // ===== CONFIG: set the contract address here once known =====
 const CONTRACT_ADDRESS = "0xCommingSoon";
-const X_LINK = "https://x.com/Snowmoon_Robin";
+const X_LINK = "https://x.com/Snowmoon_E";
 const UNISWAP_BASE = "https://app.uniswap.org/swap?chain=mainnet";
 const hasCA = /^0x[a-fA-F0-9]{40}$/.test(CONTRACT_ADDRESS);
 const buyUrl = hasCA ? UNISWAP_BASE + "&outputCurrency=" + CONTRACT_ADDRESS : UNISWAP_BASE;
