@@ -1,0 +1,167 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Snowmoon ($SNOWMOON) · Community tribute to the novel, on Robinhood Chain</title>
+<meta name="description" content="$SNOWMOON: a community tribute to Vitalik Buterin's sci-fi novel Snowmoon — Veridia, Gladias, privacy robes, Keepers. On Robinhood Chain. Not affiliated.">
+<meta property="og:title" content="Snowmoon ($SNOWMOON)"><meta property="og:image" content="/img/hero.jpg">
+<link rel="icon" href="/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07101c;--bg2:#0d1a30;--ice:#cfe3f5;--silver:#e6edf5;--blue:#5fa8e8;--cyan:#7ad4ff;--sun:#ff9a5a;--sun2:#ffcf7a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:radial-gradient(ellipse at top,#163050,var(--bg) 58%);color:var(--silver);line-height:1.6;overflow-x:hidden}
+#snow{position:fixed;inset:0;pointer-events:none;z-index:0}
+a{color:inherit}.wrap{max-width:1150px;margin:auto;padding:0 20px;position:relative;z-index:1}
+h1,h2,h3{font-family:Cinzel,serif;letter-spacing:.04em}
+h2{font-size:clamp(28px,4vw,44px);text-align:center;margin-bottom:12px;background:linear-gradient(90deg,var(--silver),var(--cyan),var(--sun2));-webkit-background-clip:text;color:transparent}
+.sub{text-align:center;color:var(--ice);opacity:.8;max-width:720px;margin:0 auto 40px}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,16,28,.78);backdrop-filter:blur(12px);border-bottom:1px solid rgba(207,227,245,.12)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;gap:10px;align-items:center;font-family:Cinzel;font-weight:800;text-decoration:none}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;box-shadow:0 0 12px rgba(122,212,255,.35)}
+.links{display:flex;gap:20px;align-items:center}.links a{text-decoration:none;font-size:14px;opacity:.85}
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;font-weight:800;text-decoration:none;border:0;cursor:pointer;font-size:15px;transition:.2s}
+.btn.sun{background:linear-gradient(90deg,var(--sun),var(--sun2));color:#1a1020;box-shadow:0 6px 24px rgba(255,154,90,.35)}
+.btn.ghost{border:1px solid var(--ice);color:var(--silver);background:transparent}.btn:hover{transform:translateY(-2px)}
+.box{position:relative;overflow:hidden;border-radius:18px}.box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.r169{aspect-ratio:16/9}.r43{aspect-ratio:4/3}.r11{aspect-ratio:1/1}.r31{aspect-ratio:3/1}
+header{padding:60px 0 40px}.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,6.5vw,78px);line-height:1;background:linear-gradient(180deg,#fff,var(--ice) 45%,var(--cyan));-webkit-background-clip:text;color:transparent}
+.hero .tag{color:var(--cyan);font-weight:800;letter-spacing:.18em;font-size:12px;margin-bottom:12px}
+.hero p{margin:18px 0 26px;font-size:17px;color:var(--ice)}
+.coinlogo{width:92px;height:92px;border-radius:50%;margin-bottom:16px;object-fit:cover;animation:spin 8s linear infinite;box-shadow:0 0 40px rgba(122,212,255,.45)}
+@keyframes spin{0%,100%{transform:rotateY(0)}50%{transform:rotateY(180deg)}}
+.ca{display:flex;align-items:center;gap:10px;margin-top:20px;background:rgba(207,227,245,.08);border:1px solid rgba(207,227,245,.2);padding:8px 8px 8px 16px;border-radius:999px;width:max-content;max-width:100%;flex-wrap:wrap}
+.ca code{font-size:14px;overflow:hidden;text-overflow:ellipsis}.ca button{background:var(--silver);color:#07101c;border:0;border-radius:999px;padding:6px 14px;font-weight:800;cursor:pointer}
+.heroimg{box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 0 1px rgba(207,227,245,.15)}
+section{padding:80px 0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{background:linear-gradient(180deg,rgba(22,42,72,.75),rgba(10,22,42,.75));border:1px solid rgba(207,227,245,.12);border-radius:20px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--cyan)}.card .box{border-radius:0}.card .t{padding:18px 20px 22px}.card h3{font-size:18px;margin-bottom:6px;color:#fff}.card p{font-size:14px;color:var(--ice);opacity:.85}
+.quote{font-family:Cinzel;font-size:19px;border-left:3px solid var(--cyan);padding-left:18px;margin:18px 0;color:#fff}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{counter-increment:s;padding:24px;border-radius:18px;background:rgba(207,227,245,.06);border:1px solid rgba(207,227,245,.14)}
+.step:before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(var(--cyan),var(--blue));color:#07101c;font-weight:800;margin-bottom:12px}
+.step h3{font-size:17px;margin-bottom:6px}.step p{font-size:14px;color:var(--ice)}
+.tok{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}.tok div{padding:26px 14px;border-radius:18px;background:rgba(207,227,245,.06);border:1px solid rgba(207,227,245,.14)}
+.tok b{display:block;font-family:Cinzel;font-size:20px;color:#fff;word-break:break-word}.tok span{font-size:13px;color:var(--cyan)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery .box{border-radius:14px}
+.char .role{font-size:12px;color:var(--sun2);font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+footer{padding:50px 0 40px;text-align:center;border-top:1px solid rgba(207,227,245,.12);font-size:13px;color:var(--ice)}
+footer .banner{max-width:720px;margin:0 auto 24px}
+.inspired{font-size:13px;opacity:.75;margin-top:10px}.inspired a{color:var(--cyan);text-decoration:underline}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}.reveal.on{opacity:1;transform:none}
+@media(max-width:980px){.grid5{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:860px){.hero,.grid2{grid-template-columns:1fr}.grid3,.grid5{grid-template-columns:1fr 1fr}.steps,.tok,.gallery{grid-template-columns:1fr 1fr}.links a:not(.btn){display:none}}
+@media(max-width:520px){.grid3,.grid5,.steps{grid-template-columns:1fr}.hero{text-align:center}.ca{margin:20px auto 0}.coinlogo{margin-left:auto;margin-right:auto}.links .btn{padding:9px 16px}}
+</style></head><body><canvas id="snow"></canvas>
+<nav><div class="wrap"><a class="brand" href="#"><img src="img/logo.jpg" alt="Snowmoon">Snowmoon</a>
+<div class="links">
+<a href="#story">Story</a><a href="#characters">Characters</a><a href="#world">World</a><a href="#buy">Buy</a><a href="#tokenomics">Tokenomics</a>
+<a href="https://x.com/" target="_blank" rel="noopener">X</a>
+<a class="btn sun" href="#">Buy $SNOWMOON</a>
+</div></div></nav>
+
+<header class="wrap"><div class="hero">
+<div class="reveal">
+<img class="coinlogo" src="img/logo.jpg" alt="Snowmoon logo">
+<div class="tag">❄ ROBINHOOD CHAIN · $SNOWMOON</div>
+<h1>Snowmoon</h1>
+<p>A community tribute to the world of Veridia — Gladias, Seila, privacy robes, Keepers, and the cold light of the crescent. Fan-made. Not endorsed.</p>
+<a class="btn sun" href="#">Buy $SNOWMOON</a>
+<a class="btn ghost" href="https://x.com/" target="_blank" rel="noopener">Join on X</a>
+<div class="ca"><code id="ca">0xCommingSoon</code><button type="button" onclick="navigator.clipboard.writeText(document.getElementById('ca').textContent);this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1500)">Copy</button></div>
+</div>
+<div class="box r169 heroimg reveal"><img src="img/hero.jpg" alt="Snowmoon crest over icy Veridia peaks"></div>
+</div></header>
+
+<section id="story"><div class="wrap grid2">
+<div class="box r43 reveal"><img src="img/hero-logo.jpg" alt="Snowmoon crystal crest"></div>
+<div class="reveal">
+<h2 style="text-align:left">The novel behind the moon</h2>
+<p><i>Snowmoon</i> is Vitalik Buterin's sci-fi novel — cities that vote on everything, cameras that never blink, and people who still choose privacy. This site and token are a fan tribute to that story.</p>
+<p class="quote">"In Veridia, the moon is a reminder: some light should stay cold, and some lives should stay unwatched."</p>
+<p>Gladias climbs the tower stairs. Seila keeps the Order of Steering honest. Zei and Bai move through rain-soaked streets. Emerald AI watches the Watch. We built $SNOWMOON for readers who loved that ice-and-neon world.</p>
+<p class="inspired">Inspired by <a href="https://x.com/jorgedoyle87/status/2104188607456330208" target="_blank" rel="noopener">this thread on X</a> · Community tribute only</p>
+</div></div></section>
+
+<section id="characters"><div class="wrap">
+<h2>Characters of Snowmoon</h2>
+<p class="sub">Faces from Veridia — Keepers, Sentinels, and the ones who still walk in privacy robes.</p>
+<div class="grid5">
+<div class="card char reveal"><div class="box r11"><img src="img/gladias-rain.jpg" alt="Gladias"></div><div class="t"><div class="role">Protagonist</div><h3>Gladias</h3><p>Rain on the coat. Questions nobody wants answered. He climbs when the Watch says stay down.</p></div></div>
+<div class="card char reveal"><div class="box r11"><img src="img/seila.jpg" alt="Seila"></div><div class="t"><div class="role">Order of Steering</div><h3>Seila</h3><p>Tea, maps, and hard choices. She steers Veridia without letting the Arctic Empire write the rules.</p></div></div>
+<div class="card char reveal"><div class="box r11"><img src="img/zei.jpg" alt="Zei"></div><div class="t"><div class="role">Keeper</div><h3>Zei</h3><p>Quiet steps. Uneven shoes under a privacy robe so the cameras can't learn his gait.</p></div></div>
+<div class="card char reveal"><div class="box r11"><img src="img/bai.jpg" alt="Bai"></div><div class="t"><div class="role">Sentinel</div><h3>Bai</h3><p>Loyalty that costs more than a bounty. Some doors she opens. Some she never will.</p></div></div>
+<div class="card char reveal"><div class="box r11"><img src="img/emerald.jpg" alt="Emerald AI"></div><div class="t"><div class="role">Emerald AI</div><h3>Emerald</h3><p>Green light in the dark. Pattern without a face — friend, threat, or both, depending on the chapter.</p></div></div>
+</div></div></section>
+
+<section id="world"><div class="wrap">
+<h2>World of Veridia</h2>
+<p class="sub">Streets, assemblies, tower stairs, and the cold threat from the Arctic Empire.</p>
+<div class="grid3">
+<div class="card reveal"><div class="box r169"><img src="img/veridia-street.jpg" alt="Veridia street"></div><div class="t"><h3>Veridia streets</h3><p>Neon in the mist. Reputation scores in the air. Zipcoin changing hands where banks never reach.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/tower-stairs.jpg" alt="Tower stairs"></div><div class="t"><h3>Tower stairs</h3><p>Every floor a different vote. Climb for answers. Pay in attention — or in privacy.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/assembly.jpg" alt="Assembly hall"></div><div class="t"><h3>Assembly</h3><p>Taxes voted from sofas. Ugly buildings cost extra. Open code can drop your rate to zero.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/tea-meeting.jpg" alt="Tea meeting"></div><div class="t"><h3>Tea &amp; steering</h3><p>The Order meets over porcelain. Strategy softens nobody — it just looks polite.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/watch-door.jpg" alt="Watch door"></div><div class="t"><h3>The Watch</h3><p>A door that buzzes. A knock nobody answers. Burn enough and someone has to listen.</p></div></div>
+<div class="card reveal"><div class="box r169"><img src="img/arctic-threat.jpg" alt="Arctic Empire"></div><div class="t"><h3>Arctic Empire</h3><p>Cold empire on the horizon. Veridia's warmth is a choice — and choices have enemies.</p></div></div>
+</div></div></section>
+
+<section id="buy"><div class="wrap">
+<h2>How to Buy on Robinhood Chain</h2>
+<p class="sub">Steps once $SNOWMOON is live. Always copy the CA from this site or our official X. Buy link opens when the contract is set.</p>
+<div class="steps">
+<div class="step reveal"><h3>Get a wallet</h3><p>Install a wallet that supports Robinhood Chain from its official site and back up your seed phrase offline.</p></div>
+<div class="step reveal"><h3>Get gas</h3><p>Bridge or buy the chain's gas token and send it to your wallet so you can pay for the swap.</p></div>
+<div class="step reveal"><h3>Open a swap</h3><p>Use a trusted DEX or swap UI for Robinhood Chain and connect the same wallet.</p></div>
+<div class="step reveal"><h3>Swap for $SNOWMOON</h3><p>Paste the contract address from this page, set your amount, and swap. Welcome to Veridia.</p></div>
+</div>
+<p style="text-align:center;margin-top:28px"><a class="btn sun" href="#">Buy $SNOWMOON</a></p>
+</div></section>
+
+<section id="tokenomics"><div class="wrap grid2">
+<div class="box r43 reveal"><img src="img/banner.jpg" alt="Snowmoon banner"></div>
+<div class="reveal">
+<h2 style="text-align:left">Tokenomics</h2>
+<p style="margin-bottom:20px">Fan token for the Snowmoon novel's world. Supply and tax TBA until launch — CA is a placeholder for now.</p>
+<div class="tok" style="grid-template-columns:1fr 1fr">
+<div><b>$SNOWMOON</b><span>Symbol</span></div>
+<div><b>Robinhood Chain</b><span>Chain</span></div>
+<div><b>Coming Soon</b><span>Supply</span></div>
+<div><b>TBA</b><span>Tax</span></div>
+</div>
+<div class="ca" style="margin-top:22px"><code>0xCommingSoon</code><button type="button" onclick="navigator.clipboard.writeText('0xCommingSoon');this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1500)">Copy</button></div>
+</div></div></section>
+
+<section id="gallery"><div class="wrap">
+<h2>Snowmoon Gallery</h2>
+<p class="sub">Crystal crest, icy streets, Keepers in the rain.</p>
+<div class="gallery">
+<div class="box r11 reveal"><img src="img/logo.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/gladias-rain.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/veridia-street.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/seila.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/zei.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/bai.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/emerald.jpg" alt=""></div>
+<div class="box r11 reveal"><img src="img/arctic-threat.jpg" alt=""></div>
+</div></div></section>
+
+<footer><div class="wrap">
+<div class="box r31 banner"><img src="img/banner.jpg" alt="Snowmoon banner"></div>
+<p style="margin-bottom:14px">
+<a class="btn sun" href="#">Buy $SNOWMOON</a>
+<a class="btn ghost" href="https://x.com/" target="_blank" rel="noopener">X</a>
+</p>
+<p>Community tribute, not affiliated with Vitalik Buterin. Not financial advice.</p>
+<p class="inspired">Inspired by <a href="https://x.com/jorgedoyle87/status/2104188607456330208" target="_blank" rel="noopener">x.com/jorgedoyle87/status/2104188607456330208</a></p>
+<p style="opacity:.6;margin-top:8px">© 2026 Snowmoon ($SNOWMOON) · Robinhood Chain</p>
+</div></footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const c=document.getElementById('snow'),g=c.getContext('2d');let W,H,f=[];
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight}rs();addEventListener('resize',rs);
+for(let i=0;i<100;i++)f.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*2+.4,s:Math.random()*.55+.25,d:Math.random()*.5-.25});
+(function a(){g.clearRect(0,0,W,H);g.fillStyle='rgba(220,235,250,.75)';f.forEach(p=>{p.y+=p.s;p.x+=p.d;if(p.y>H){p.y=-5;p.x=Math.random()*W}g.beginPath();g.arc(p.x,p.y,p.r,0,7);g.fill()});requestAnimationFrame(a)})();
+</script></body></html>
